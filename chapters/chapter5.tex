@@ -1,0 +1,39 @@
+\chapter{Approach}
+\label{approach}
+
+\section{Solution / addressing requirements}
+
+
+1.	Generalized overview
+Calculating summarization for the literature automatically is a complex task. There is a lot of information to be visualized on a limited display space available. We provide solution for generalization of the overview of the literature by ranking the storylines. We calculate rank of a story with the help of text mining algorithms like topic modeling, co-occurrence analysis. The stories with high ranking are frequently occurring and hence given high importance. The stories with lower importance can be hidden in order to save display space. Co-occurrences of the terms provide contextual information.
+
+2.	Visualization of similarity between literature
+For comparing two literature, we divide the visualization in three parts. Each literature has a dedicated visualization space for its content. At the center of the screen, similar topics and other similar keywords from both the literature are visualized. This depicts clear differentiation between the similar and different storylines and topics. The topics and terms which occur or described in both the literature are visualized at the center, in the “convergence panel”.  In the convergence panel a keyword is placed nearer to a literature depending on its relevance and frequency of appearance. If a keyword is of equal importance in both literature then it is placed at the center of the panel. The sequential order of the keywords represents their order of appearance in the literature.
+
+3.	Visualization of differences between literature
+Different topics in literature are displayed in “word tree-map” visualization. A word tree-map provides possibility to visualize the ordering of the keywords on the pages in the sequence they appear. A Tree Map consists of various keywords from a page of a literature which depict the context of the keywords in the convergence panel. Using such visualization, the reader is able to identify how diverse a similar word (appearing in both literature) is described in two literature. The horizontal ordering (from left to right) represents temporal aspects in a literature. The hierarchy of the keywords in a tree-map is based on their order of appearance in the page. Every keyword is given a ranking based on topic modeling calculations and their frequency. Keywords with highest ranks are displayed in the visualization.
+
+4.	Visualization  of relevance of the information
+Every storyline and topic is ranked based on co-occurrence analysis. Co-occurrence analysis is an algorithm which makes use of probability calculated in topic modeling and frequency of occurrence of the keywords. Keywords with highest ranks are displayed in the visualization. The size of the keyword is proportional to the frequency of its occurrence. If a keyword is appearing very frequently in a literature then it can be displayed in large size and its repeated occurrence is denoted by a dot to save screen-space. All keywords describing a topic have the same color.
+
+5.	Changing Content
+Since the amount of information to be shown depends on the screen size, visualization is displayed with respect to the screen sizes and can adapt to the window resizing. 
+The arrangement of the literature helps in comprehending the similarity and differences between the literature. Our prototype supports comparing two literature. But we aim to provide the facility to compare up to 5 literature. When there are more than two literature for comparison, readers can select the order of the literature and the arrangements for visualization.
+
+6.	Quick text previews
+On selection of a keyword options are displayed viz. (1) Quick preview of text (2) View full text of the page (3) Search keyword in whole literature.
+Quick preview of text shows the reader sentences with the selected keyword on a page and two sentences before and after it. The possibility to go to the preview of previous and next occurrence of the selected keywords is also provided in preview window. Readers can also choose to view full text of the page.
+
+7.	Details on Demand
+Interactive methods allow readers to navigate through the literature. They allow readers to explore various topics in detail. Reader can focus on particular section or type of information (line characters, location etc.) from literature by selecting desired options from “Selection panel”. Readers can also focus on the chapters or pages from the literature they want to compare. The visualization displayed for selected chapters from the literature can be non-synchronous in terms of page numbers.
+The reader is also given facility to select a particular keyword from visualization. On a keyword selection, contextual information is recalculated and the visualization is redesigned giving high importance to the selected keyword and its contextual information.
+
+8.	Search for keywords to retrieve details
+If the desired keyword is not displayed in automatically identified visualization, the reader can search for a keyword/ phrase in the literature by explicitly querying the application using the provided text input field. The Visualization is recalculated and re-designed with respect to the search query. The reader has choice of searching for exact same word and/ or its different grammatical forms with the help of stemming and lemmatising methods.
+
+\section{Text analysis}
+
+\section{Text comparison}
+
+\section{text visualization}
+
